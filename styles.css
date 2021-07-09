@@ -6,7 +6,7 @@ propiedad: valor;
 */
 
 /*Selector tagname*/
-h1, h2{
+/*h1, h2{
   display: inline-block; 
     width: 400px;
 }
@@ -16,7 +16,7 @@ h4{
 }
 
 /*selector de ID*/
-#primero{
+/*#primero{
     background-color: blueviolet;
 }
 
@@ -25,11 +25,12 @@ div{
 }
 
 /*selector de clase*/
-.container{
+/*.container{
     background-color: cornflowerblue;
 }
 
 /*universal*/
-*{
-    font-size: 20px;
-}
+/**{
+    font-size: 2
+0px;
+}*/

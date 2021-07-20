@@ -34,7 +34,7 @@ div{
     font-size: 2
 0px;
 }*/
-
+/*
 ul{
     display: flex;
     flex-direction: row;
@@ -83,5 +83,98 @@ margin-top: 50px;
     display: inline-block;
     margin-left: 50px;
     margin-right: 50px;
+}*/
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
 }
 
+.barraopciones{
+    display: flex;
+    flex-direction: column;
+    /*width: 50px;*/
+    height: 880px;
+    background-color: darkslategray;
+    padding-top: 20px;
+    border-style: solid none solid solid;
+    }
+
+.icon{
+    width: 32px;
+    height: 32px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.icon2{
+    padding-left: 50px;
+    width: 32px;
+    height: 32px;
+    
+}
+
+.icon3{
+    width: 32px;
+    height: 32px;
+    
+}
+
+
+#canales{
+   /* display: inline-block;*/
+    width: 200px;
+    background-color: rgb(80, 139, 139);
+    padding-left: 30px;
+    height: 900px;
+    border-style: solid none solid solid;
+}
+
+#mensajes{
+    
+    width: 1080px;
+    background-color: lightgray;
+    height: 900px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-style: solid;
+}
+
+#listado{
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+
+.CanalItem{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.iconMini{
+    width: 10px;
+    height: 10px;
+    padding-right: 10px;
+}
+
+div{
+    
+    padding: 20px;
+    border-top: 5px black;
+    
+}
+
+  a:hover, a:active {
+    width: 200px;
+    background-color: green;
+    color: white;
+  }
+
+  #recuadroTexto {
+    border: 1px solid black;
+    font-style: italic;
+    padding: 20px;
+  } 

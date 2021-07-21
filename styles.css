@@ -1,180 +1,91 @@
-/* sintaxis
-select{
-propiedad: valor;
-propiedad: valor;
-}
-*/
-
-/*Selector tagname*/
-/*h1, h2{
-  display: inline-block; 
+#container{
+    display: grid;
     width: 400px;
-}*/
-
-/*h4{
-    font-weight: lighter;
+    height: 200px;
+    background-color: teal;
+    /*grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);*/
+    grid-template: repeat(2, 1fr)/ 1fr 20px repeat(5, 1fr);
+    grid-template-areas: 
+    "b1 b2 b3 b4 b5 b6 b6"
+    "b1 b2 b3 b4 b5 b7 b7";
 }
-*/
-/*selector de ID*/
-/*#primero{
-    background-color: blueviolet;
-}*/
-/*
-div{
-    background-color: chartreuse;
-}*/
 
-/*selector de clase*/
-/*.container{
-    background-color: cornflowerblue;
-}
-*/
-/*universal*/
-/**{
-    font-size: 2
-0px;
-}*/
-/*
-ul{
+.item{
+    width: 50px;
+    height: 50px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    height: 200px;
-}
-
-.header{
-    display: inline-block;
-    background-color: rgb(26, 26, 26);
-    width: 100%;
-    margin: 0;
-    
-}
-
-li{
-    display: inline-block;
-    padding-right: 50px;
-    font-weight: bold;
-    color:rgb(241, 241, 241);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-section{
-margin-top: 50px;
-;
-}
-
-#about{
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-#work{
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-#hobbies{
-    display: inline-block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-#contact{
-    display: inline-block;
-    margin-left: 50px;
-    margin-right: 50px;
-}*/
-
-
-main{
-    display: flex;
-    flex-direction: row;
-    height: 200px;
-}
-
-.barraopciones{
-    display: flex;
-    flex-direction: column;
-    /*width: 50px;*/
-    height: 880px;
-    background-color: darkslategray;
-    padding-top: 20px;
-    border-style: solid none solid solid;
-    }
-
-.icon{
-    width: 32px;
-    height: 32px;
-    padding-left: 9px;
-    padding-right: 9px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-}
-
-.icon2{
-    padding-left: 50px;
-    width: 32px;
-    height: 32px;
-    
-}
-
-.icon3{
-    width: 32px;
-    height: 32px;
-    
 }
 
 
-#canales{
-   /* display: inline-block;*/
-    width: 200px;
-    background-color: rgb(80, 139, 139);
-    padding-left: 30px;
-    height: 900px;
-    border-style: solid none solid solid;
+.column-rojo{
+    /*grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 1;*/
+    grid-area: b7;
+    justify-self: center;
+    align-self: center;
 }
 
-#mensajes{
-    
-    width: 1080px;
-    background-color: lightgray;
-    height: 900px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-style: solid;
+.column-azul{
+    /*grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 2;*/
+    grid-area: b2;
+    justify-self: center;
+    align-self: center;
 }
 
-#listado{
-    padding-inline-start: 0px;
-    list-style-type: none;
+.column-verde{
+    /*grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 5;*/
+    grid-area: b3;
+    justify-self: center;
+    align-self: center;
 }
 
-.CanalItem{
-    padding-top: 5px;
-    padding-bottom: 5px;
+.column-morado{
+    /*grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 8;*/
+    grid-area: b4;
+    justify-self: center;
+    align-self: center;
 }
 
-.iconMini{
-    width: 10px;
-    height: 10px;
-    padding-right: 10px;
+.column-gris{
+    /*grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 6;*/
+    grid-area: b5;
+    justify-self: center;
+    align-self: center;
 }
 
-div{
-    
-    padding: 20px;
-    border-top: 5px black;
-    
+.rojo{
+    background-color: red;
 }
 
-  a:hover, a:active {
-    width: 200px;
+.azul{
+    background-color: blue;
+}
+
+.verde{
     background-color: green;
-    color: white;
-  }
+}
 
-  #recuadroTexto {
-    border: 1px solid black;
-    font-style: italic;
-    padding: 20px;
-  } 
+.morado{
+    background-color: violet;
+}
+
+.gris{
+    background-color: grey;
+}
+
+.child-grid{
+    background-color: black;
+    grid-area: b1;
+}

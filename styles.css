@@ -1,6 +1,50 @@
-#container{
-    width: 400px;
-    height: 400px;
-    background-color: red;
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%/*repeat(4,200px)*/;
+    grid-template-rows: 33% 33% 33% /*repeat(3, 200px)*/;
+    width: 1200px;
+    height: 600px;
+    /*background-color: red;*/
+    grid-template-areas:
+    "box1 . box2 ."
+    ". box3 . box4"
+    ". . box5 .";
 }
 
+#img1{
+    grid-area: box1;
+    width: 200px;
+    height: 200px;
+}
+
+#img2{
+    grid-area: box2;
+    width: 200px;
+    height: 200px;
+}
+
+#img3{
+    grid-area: box3;
+    width: 200px;
+    height: 200px;
+}
+
+#img4
+{
+    grid-area: box4;
+    width: 200px;
+    height: 200px;
+}
+
+#img5
+{
+    grid-area: box5;
+    width: 200px;
+    height: 200px;
+}
+    
+/*@media screen and (min-width: 375px) and (max-width: 1620px) {
+    .container {
+        background-color: black;
+    }*/
+}
